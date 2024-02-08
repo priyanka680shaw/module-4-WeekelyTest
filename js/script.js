@@ -54,6 +54,7 @@ function renderCart(e, count){
     let total = document.querySelector("#total");
     total.innerText = totalPrice;
 }
+//event deligation
 productsContainer.addEventListener("click" , (e)=>{
     //console.log(e.target.innerText === "+");
     if(e.target.innerText === "+"){
@@ -69,7 +70,7 @@ productsContainer.addEventListener("click" , (e)=>{
             renderCart(e, countVal);
         }
         else {
-            alert("You hanen't add any prodduct yet");
+            alert("You haven't add any prodduct yet");
             return;
         }
     }
